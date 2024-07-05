@@ -10,10 +10,15 @@
         h2 {
             color: #007bff;
         }
-
-        .section {
-            background-color: #f8f9fa;
+        body{
+            background-image: url('https://static.vecteezy.com/system/resources/previews/015/132/071/non_2x/abstract-the-cyan-background-for-design-hd-wallpaper-free-vector-free-photo.jpg');
+            background-size: cover; /* Adjust as needed */
+            background-position: center;
+        }
+        section {
+            background-color: #e6e2dfb4;
             /* Light gray background */
+            backdrop-filter: blur(8px);
             padding: 60px 0;
             /* Padding top and bottom */
             text-align: center;
@@ -41,13 +46,16 @@
             color: #007bff;
             /* Blue color for numbers */
         }
-        button{
+
+        button {
             position: fixed;
             z-index: 10;
             right: 30px;
+            background-color: red;
             top: 30px;
-            background-color:red;
+
         }
+
         .stat-label {
             font-size: 18px;
             /* Font size for labels */
@@ -63,45 +71,57 @@
 </head>
 
 <body>
-    <dialog id="my-dialog" class="h-80">
-        <div class="text-center">
-            <img src="Creative.jpg" width="100%"  alt="">
-            <button onclick="closeDialog()" >X</button>
-        </div>
-    </dialog>
-
-
     <nav class="d-flex justify-content-center p-3">
         <img src="https://s3.collegedisha.com/collegedisha/institutes/college/logo/JP-Institute-of-Engineering-and-Technology--Meerut-logo.webp?ik=false"
             width="80px" alt="">
         <h2 class="mt-4 mx-3">JP Group of Institutions</h2>
     </nav>
-    <div>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img height="550px"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFvq6C5VZnBOkGoQ3o1_hZ7YZJ-0z49V_Vfw&s"
-                        class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img height="550px"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW2rimRz3gPd7xXBg-IHcyoARhfQ7Lhfg60w&s"
-                        class="d-block w-100" alt="...">
-                </div>
+    <section class="container my-5 text-center " >
+        <div class="d-lg-flex">
+            <div class="col-lg-4 col-10">
+                <img src="Creative.jpg" width="70%" alt="">
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div class="col-lg-4 col-10">
+                <img src="2.jpg" width="100%" alt="">
+            </div>
+            <div class="col-lg-4 col-10 px-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJRf3C3Pj6PTZ3HKHa5tBFxtIh5z4SmyaR0w&s" alt="" width="100%">
+            </div>
         </div>
-    </div>
+    <div>
+        <h3 style="color: red;">
+            <br>
+            <br>
+            **Celebrating Heritage, Inspiring Futures: Happy Founder's Day!**
+        </h3>
+        Dear Students, Faculty, Staff, Alumni, and Well-wishers,
+        
+        On this auspicious occasion of Founder's Day, we gather to honor the vision, dedication, and unwavering
+        commitment of our founders who laid the cornerstone of this esteemed institution. Their foresight continues to
+        inspire and guide us as we strive for excellence in education, research, and community service.
+
+        Since its inception, our college has stood as a beacon of knowledge, nurturing countless minds and shaping
+        futures. Today, we celebrate not only the achievements of the past but also look forward with optimism and
+        enthusiasm to the opportunities that lie ahead.
+
+        As we reflect on our journey, let us reaffirm our commitment to uphold the values of integrity, inclusivity, and
+        academic excellence. Let us cherish the spirit of innovation and collaboration that defines our institution,
+        empowering us to address the challenges of tomorrow.
+
+    To our students: You are the heart and soul of our college, and your aspirations drive us forward. May you
+    continue to learn, grow, and make meaningful contributions to society.
+
+    To our faculty and staff: Your dedication and expertise are the cornerstone of our success. Thank you for your
+    tireless efforts in shaping the minds of future leaders and thinkers.
+
+    To our alumni: Your accomplishments are a testament to the transformative power of education. We are proud of
+    your achievements and grateful for your continued support.
+    
+    Together, let us celebrate our rich heritage and recommit ourselves to building a brighter future for
+    generations to come
+</div>
+    </section>
+
 
     <section class="container my-4">
         <div class="row">
@@ -132,7 +152,17 @@
             </div>
         </div>
     </section>
-
+    <section class="container mb-5">
+        <div class="text-center">
+            <h1>Gallery</h1>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-lg-4"><img width="350px" src="1.jpg" alt=""></div>
+            <div class="col-lg-4"><img width="350px" src="2.jpg" alt=""></div>
+            <div class="col-lg-4"><img width="350px" src="3.jpg" alt=""></div>
+        </div>
+    </section>
     <div class="container my-5">
         <div class="row flex">
             <div class="col-lg-8">
@@ -155,14 +185,11 @@
                     <h2>
                         JP Academy
                     </h2>
-
-                    <h2>JP International School</h2>
-
                     <h2>JP Academy Colts</h2>
 
-                    <h2>JP Institute of Education & Applied</h2>
+                    <h2>JP Institute of Education & Applied Sciences</h2>
 
-                    <h2>Science JP Institute of Hotel Mgmt. & Catering Technology</h2>
+                    <h2>JP Institute of Hotel Mgmt. & Catering Technology</h2>
 
                     <h2>JP Institute of Management</h2>
 
@@ -183,8 +210,37 @@
             </div>
         </div>
     </div>
-    <section class="about-section my-5">
-        <div class="container">
+    
+    <div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img height="550px"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFvq6C5VZnBOkGoQ3o1_hZ7YZJ-0z49V_Vfw&s"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img height="550px"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW2rimRz3gPd7xXBg-IHcyoARhfQ7Lhfg60w&s"
+                        class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+ <br> <br>
+    
+    <section class="about-section my-5 container">
+        <div >
             <div class="text-center mb-5">
                 <h1>About Us</h1>
             </div>
@@ -217,17 +273,7 @@
         </div>
     </section>
 
-    <section class="container mb-5">
-        <div class="text-center">
-            <h1>Gallery</h1>
-            <hr>
-        </div>
-        <div class="row">
-            <div class="col-lg-4"><img width="350px" src="1.jpg" alt=""></div>
-            <div class="col-lg-4"><img width="350px" src="2.jpg" alt=""></div>
-            <div class="col-lg-4"><img width="350px" src="3.jpg" alt=""></div>
-        </div>
-    </section>
+    
 
     <!-- Optional JavaScript; choose one of the two! -->
 
